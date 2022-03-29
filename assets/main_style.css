@@ -1,0 +1,27 @@
+#countdown_container {
+    display: flex;
+    justify-content: center;
+}
+
+.first_title_item {
+    text-align: center;
+}
+
+.count_down_item{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
