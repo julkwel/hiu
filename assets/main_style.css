@@ -2,6 +2,7 @@ body, html{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-family:sans-serif;
 }
 
 #countdown_container {
@@ -30,4 +31,19 @@ body, html{
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.danger{
+	background-color: red;
+}
+
+@media all and (max-width: 1024px) {
+	.main_container{
+	  display: block;
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  height: auto;
+	}
 }
