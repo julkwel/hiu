@@ -1,49 +1,56 @@
-body, html{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family:sans-serif;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+  transition: background-image 2s;
+  margin: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 #countdown_container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .first_title_item {
-    text-align: center;
+  text-align: center;
 }
 
-.count_down_item{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    border-radius: 50%;
+.count_down_item {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 50%;
 }
 
-.main_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.danger{
-	background-color: red;
+.danger {
+  background-color: red;
 }
 
 @media all and (max-width: 1024px) {
-	.main_container{
-	  display: block;
-	  position: absolute;
-	  left: 50%;
-	  top: 50%;
-	  -webkit-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	  height: auto;
-	}
+  .main_container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: auto;
+  }
 }
