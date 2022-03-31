@@ -48,20 +48,20 @@ html {
   height: 47px;
   position: relative;
   margin: auto;
-  top: 25%;
+  top: 35%;
 }
 #preloader:before, #preloader:after {
   content: "";
   display: block;
   border: 24px solid;
-  border-color: transparent #82acff;
+  border-color: transparent transparent #82acff #82acff;
   position: absolute;
   left: 0;
   top: 0;
   animation: mvx 1.2s infinite ease-in;
 }
 #preloader:before {
-  border-color: #ff5d9e transparent;
+  border-color: #ff5d9e #ff5d9e transparent transparent;
   animation-name: mvrx;
 }
 @keyframes mvx {
