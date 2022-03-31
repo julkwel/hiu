@@ -64,52 +64,50 @@ html {
 }
 /*preloader*/
 #preloader {
-  width: 47px;
-  height: 47px;
   position: relative;
+  width: 48px;
+  height: 48px;
+  background: #eee;
+  border-radius: 50%;
+  animation: ellipseAnimation 2s linear infinite;
   margin: auto;
   top: 35%;
 }
-#preloader:before, #preloader:after {
-  content: "";
-  display: block;
-  border: 24px solid;
-  border-color: transparent transparent #3d8de5 #3d8de5;
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: mvx 1.2s infinite ease-in;
-}
-#preloader:before {
-  border-color: #f5a2a1 #f5a2a1 transparent transparent;
-  animation-name: mvrx;
-}
-@keyframes mvx {
-  0%, 10% {
-    transform: translate(0, 0) rotate(0deg);
+@keyframes ellipseAnimation {
+  0% {
+    border-radius: 50%;
   }
-  30% {
-    transform: translate(-50%, -50%) rotate(0deg);
+  12.5% {
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 0 0 50% 50%;
+    transform: rotate(90deg);
+  }
+  37.5% {
+    border-radius: 0 0 0 50%;
+    transform: rotate(135deg);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(180deg);
+    border-radius: 0;
+    transform: rotate(180deg);
   }
-  75%, 100% {
-    transform: translate(0, 0) rotate(180deg);
+  62.5% {
+    border-radius: 50% 0 0 0;
+    transform: rotate(225deg);
   }
-}
-@keyframes mvrx {
-  0%, 10% {
-    transform: translate(0, 0) rotate(0deg);
+  75% {
+    border-radius: 50% 50% 0 0;
+    transform: rotate(270deg);
   }
-  30% {
-    transform: translate(50%, 50%) rotate(0deg);
+  87.5% {
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(315deg);
   }
-  50% {
-    transform: translate(50%, 50%) rotate(180deg);
-  }
-  75%, 100% {
-    transform: translate(0, 0) rotate(180deg);
+  100% {
+    border-radius: 50%;
+    transform: rotate(360deg);
   }
 }
 
