@@ -42,6 +42,26 @@ html {
     height: auto;
   }
 }
+/*background*/
+.background--custom {
+  background: linear-gradient(90deg, #3D8DE5, #BDB1D2, #f5a2a1);
+  background-size: 300% 300%;
+  animation: gradient 10s alternate infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 /*preloader*/
 #preloader {
   width: 47px;
@@ -54,14 +74,14 @@ html {
   content: "";
   display: block;
   border: 24px solid;
-  border-color: transparent transparent #82acff #82acff;
+  border-color: transparent transparent #3d8de5 #3d8de5;
   position: absolute;
   left: 0;
   top: 0;
   animation: mvx 1.2s infinite ease-in;
 }
 #preloader:before {
-  border-color: #ff5d9e #ff5d9e transparent transparent;
+  border-color: #f5a2a1 #f5a2a1 transparent transparent;
   animation-name: mvrx;
 }
 @keyframes mvx {
