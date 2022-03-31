@@ -1,0 +1,48 @@
+/* typography */
+@font-face {
+  font-family: "ChakraPetch-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./font/ChakraPetch-Regular.ttf");
+}
+@font-face {
+  font-family: "ChakraPetch-Bold";
+  font-weight: bold;
+  font-style: bold;
+  src: url("./font/ChakraPetch-Bold.ttf");
+}
+#countdown_container {
+  display: flex;
+  justify-content: center;
+  font-family: "ChakraPetch-Bold";
+}
+
+.first_title_item {
+  text-align: center;
+  font-family: "ChakraPetch-Bold";
+}
+
+.count_down_item {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #82acff;
+  border: solid 5px #ff5d9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 10px 1px #ff5d9e;
+  -webkit-box-shadow: 1px 2px 10px 1px #ff5d9e;
+  -moz-box-shadow: 1px 2px 10px 1px #ff5d9e;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=countdown.css.map */
