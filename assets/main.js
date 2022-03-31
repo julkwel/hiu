@@ -69,12 +69,6 @@ setInterval(changeBackground, 5000);
 
 //preloader
 const preloader = document.getElementById('preloader');
-const main_container = document.querySelector('.main_container');
-console.log(main_container);
-window.addEventListener('load', e => {
-	if (e.isTrusted) {
-		preloader.style.display = 'none';
-	} else {
-		main_container.style.display = 'none';
-	}
+window.addEventListener('load', () => {
+	preloader.style.display = 'none';
 });

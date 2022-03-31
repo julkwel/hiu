@@ -1,3 +1,10 @@
+/* typography */
+@font-face {
+  font-family: "Lobster";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./font/Lobster-Regular.ttf");
+}
 body,
 html {
   width: 100%;
@@ -19,13 +26,14 @@ html {
 
 .first_title_item {
   text-align: center;
+  font-family: "Lobster";
 }
 
 .count_down_item {
   display: block;
   width: 100px;
   height: 100px;
-  background-color: aquamarine;
+  background-color: #8bffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +49,7 @@ html {
 }
 
 .danger {
-  background-color: red;
+  background-color: #e74c3c;
 }
 
 @media all and (max-width: 1024px) {
@@ -61,19 +69,20 @@ html {
   height: 47px;
   position: relative;
   margin: auto;
+  top: 25%;
 }
 #preloader:before, #preloader:after {
   content: "";
   display: block;
   border: 24px solid;
-  border-color: transparent transparent #ff5d9e #ff5d9e;
+  border-color: transparent #82acff;
   position: absolute;
   left: 0;
   top: 0;
   animation: mvx 1.2s infinite ease-in;
 }
 #preloader:before {
-  border-color: #82acff #82acff transparent transparent;
+  border-color: #ff5d9e transparent;
   animation-name: mvrx;
 }
 @keyframes mvx {
