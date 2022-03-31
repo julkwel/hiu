@@ -66,3 +66,9 @@ function changeBackground() {
 
 document.body.style.background = `url(${images[0]}) 0% 0% / cover no-repeat`;
 setInterval(changeBackground, 5000);
+
+//preloader
+const preloader = document.getElementById('preloader');
+window.addEventListener('load', () => {
+	preloader.style.display = 'none';
+});
