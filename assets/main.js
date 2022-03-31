@@ -50,25 +50,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	countDownTimer('04/23/2022 00:01 AM', 'countdown_container');
 });
 
-let backgroundActiveIdx = 0; // load the first image on load
-const images = [
-	'assets/images/hiu1.jpg',
-	'assets/images/hiu2.jpg',
-	'assets/images/hiu3.jpg',
-	'assets/images/hiu4.jpg',
-	'assets/images/hiu5.jpg',
-];
-
-function changeBackground() {
-	document.body.style.background = `url(${images[backgroundActiveIdx]}) 0% 0% / cover no-repeat`;
-	backgroundActiveIdx = (backgroundActiveIdx + 1) % images.length;
-}
-
-document.body.style.background = `url(${images[0]}) 0% 0% / cover no-repeat`;
-setInterval(changeBackground, 5000);
-
-//preloader
+// Preloader
 const preloader = document.getElementById('preloader');
 window.addEventListener('load', () => {
 	preloader.style.display = 'none';
+});
+
+// Initialize Swiper
+const swiper = new Swiper('.mySwiper', {
+	effect: 'cards',
+	grabCursor: true,
 });
