@@ -60,4 +60,7 @@ window.addEventListener('load', () => {
 const swiper = new Swiper('.mySwiper', {
 	effect: 'cards',
 	grabCursor: true,
+	autoplay: {
+		delay: 5000,
+	},
 });
