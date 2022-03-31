@@ -39,6 +39,7 @@ html {
   align-items: center;
   height: 100vh;
 }
+
 .danger {
   background-color: red;
 }
@@ -54,3 +55,5 @@ html {
     height: auto;
   }
 }
+
+/*# sourceMappingURL=main_style.css.map */
