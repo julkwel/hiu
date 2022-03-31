@@ -22,7 +22,7 @@ function countDownTimer(date, domId) {
 		} else if (distance <= _day && distance > 0) {
 			var count_down_items = document.getElementsByClassName('count_down_item');
 			for (var i = 0; i < count_down_items.length; i++) {
-				items[i].classList.add('danger');
+				count_down_items[i].classList.add('danger');
 			}
 		}
 		var days = Math.floor(distance / _day);
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	var title = 'HIU | ' + new Date().getFullYear();
 	document.title = title;
 	document.getElementById('first_title_item').innerText = title;
-	countDownTimer('04/23/2022 00:01 AM', 'countdown_container');
+	countDownTimer('04/01/2022 00:01 AM', 'countdown_container');
 });
 
 // Preloader
