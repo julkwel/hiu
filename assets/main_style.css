@@ -42,6 +42,14 @@ html {
     height: auto;
   }
 }
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /*background*/
 .background--custom {
   background: linear-gradient(90deg, #3D8DE5, #BDB1D2, #f5a2a1);
