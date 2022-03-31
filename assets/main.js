@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	var title = 'HIU | ' + new Date().getFullYear();
 	document.title = title;
 	document.getElementById('first_title_item').innerText = title;
-	countDownTimer('04/01/2022 00:01 AM', 'countdown_container');
+	countDownTimer('04/23/2022 00:01 AM', 'countdown_container');
 });
 
 // Preloader
