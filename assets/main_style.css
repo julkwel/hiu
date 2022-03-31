@@ -1,51 +1,30 @@
 /* typography */
 @font-face {
-  font-family: "Lobster";
+  font-family: "ChakraPetch-Regular";
   font-weight: normal;
   font-style: normal;
-  src: url("./font/Lobster-Regular.ttf");
+  src: url("./font/ChakraPetch-Regular.ttf");
 }
+@font-face {
+  font-family: "ChakraPetch-Bold";
+  font-weight: bold;
+  font-style: bold;
+  src: url("./font/ChakraPetch-Bold.ttf");
+}
+/* global */
 body,
 html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: sans-serif;
+  font-family: "ChakraPetch-Regular";
   transition: background-image 2s;
   margin: 0;
   backface-visibility: hidden;
+  color: #333;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
-}
-
-#countdown_container {
-  display: flex;
-  justify-content: center;
-}
-
-.first_title_item {
-  text-align: center;
-  font-family: "Lobster";
-}
-
-.count_down_item {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #8bffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  border-radius: 50%;
-}
-
-.main_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .danger {
