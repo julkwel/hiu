@@ -22,7 +22,7 @@ function countDownTimer(date, domId) {
 		} else if (distance <= _day && distance > 0) {
 			var count_down_items = document.getElementsByClassName('count_down_item');
 			for (var i = 0; i < count_down_items.length; i++) {
-				items[i].classList.add('danger');
+				count_down_items[i].classList.add('danger');
 			}
 		}
 		var days = Math.floor(distance / _day);
