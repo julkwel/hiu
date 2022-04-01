@@ -28,7 +28,7 @@ html {
 }
 
 .danger {
-  background-color: #e74c3c !important;
+  background-color: #e74c3c;
 }
 
 @media all and (max-width: 1024px) {
@@ -42,17 +42,9 @@ html {
     height: auto;
   }
 }
-.main_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 /*background*/
 .background--custom {
-  background: linear-gradient(90deg, #3D8DE5, #BDB1D2, #f5a2a1);
+  background: linear-gradient(90deg, #3d8de5, #bdb1d2, #f5a2a1);
   background-size: 300% 300%;
   animation: gradient 10s alternate infinite;
   position: absolute;
@@ -117,6 +109,15 @@ html {
     border-radius: 50%;
     transform: rotate(360deg);
   }
+}
+
+/*main*/
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main_style.css.map */
