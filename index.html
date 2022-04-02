@@ -9,37 +9,91 @@
 		<link rel="stylesheet" href="./assets/normalize.css" />
 		<link rel="stylesheet" href="./assets/countdown.css" />
 		<link rel="stylesheet" href="./assets/animations.css" />
+		<link rel="stylesheet" href="./assets/navbar.css" />
 		<link rel="stylesheet" href="./assets/lib/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./assets/swiper.css" />
+		<link rel="stylesheet" href="./assets/layout.css" />
 	</head>
 	<body>
-		<div class="background--custom"></div>
+		<!-- backgroud -->
+		<svg
+			class="background--custom"
+			id="demo"
+			viewBox="0 0 100 100"
+			preserveAspectRatio="none"
+		>
+			<path
+				fill="#4C7CBE"
+				fill-opacity="0.8"
+				d="M-100 -100L200 -100L200 70L-100 70Z"
+				style="animation: path0 31.25s linear infinite alternate"
+			/>
+			<path
+				fill="#13A6FC"
+				fill-opacity="0.7"
+				d="M-100 -100L200 -100L200 90L-100 90Z"
+				style="animation: path1 21.73913043478261s linear infinite alternate"
+			/>
+			<path
+				fill="#92345B"
+				fill-opacity="0.2"
+				d="M-100 -100L200 -100L200 70L-100 70Z"
+				style="animation: path2 13.88888888888889s linear infinite alternate"
+			/>
+		</svg>
 
-		<!-- preloader -->
-		<div id="preloader"></div>
+		<!-- preloader  -->
+		<!-- <div id="preloader"></div> -->
 
 		<!-- main -->
-		<div class="main_container">
-			<!-- swiper -->
-			<div class="swiper mySwiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"></div>
-					<div class="swiper-slide"></div>
-					<div class="swiper-slide"></div>
-					<div class="swiper-slide"></div>
-					<div class="swiper-slide"></div>
+		<main id="main_container">
+			<!-- sidebar -->
+			<nav id="navbar">
+				<ul>
+					<li>
+						<a href="#bienvenu" class="scrolly active">Bienvenue</a>
+					</li>
+					<li>
+						<a href="#participants" class="scrolly">Participants</a>
+					</li>
+					<li>
+						<a href="#partenaires" class="scrolly">Partenaires</a>
+					</li>
+					<li>
+						<a href="#contact" class="scrolly">Nous contacter</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- wrapper -->
+			<section id="wrapper">
+				<!-- welcome -->
+				<div class="welcome">
+					<div class="welcome--1">
+						<div class="title_container">
+							<h1 id="first_title_item" class="first_title_item"></h1>
+						</div>
+						<div id="countdown_container">
+							<div class="count_down_item" id="day_container"></div>
+							<div class="count_down_item" id="hour_container"></div>
+							<div class="count_down_item" id="min_container"></div>
+							<div class="count_down_item" id="sec_container"></div>
+						</div>
+					</div>
+					<div class="welcome--2">
+						<!-- swiper -->
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="title_container">
-				<h1 id="first_title_item" class="first_title_item"></h1>
-			</div>
-			<div id="countdown_container">
-				<div class="count_down_item" id="day_container"></div>
-				<div class="count_down_item" id="hour_container"></div>
-				<div class="count_down_item" id="min_container"></div>
-				<div class="count_down_item" id="sec_container"></div>
-			</div>
-		</div>
+			</section>
+		</main>
 
 		<script src="./assets/lib/swiper-bundle.min.js"></script>
 		<script type="text/javascript" src="./assets/main.js"></script>
