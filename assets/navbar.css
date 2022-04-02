@@ -1,0 +1,62 @@
+/* typography */
+@font-face {
+  font-family: "ChakraPetch-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./font/ChakraPetch-Regular.ttf");
+}
+@font-face {
+  font-family: "ChakraPetch-Bold";
+  font-weight: bold;
+  font-style: bold;
+  src: url("./font/ChakraPetch-Bold.ttf");
+}
+#navbar {
+  padding: 0 50px 0 50px;
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  font-family: ChakraPetch-Bold;
+  font-size: 1.2rem;
+  background-color: rgba(34, 33, 33, 0.719);
+  z-index: 3;
+}
+#navbar ul {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#navbar ul li {
+  list-style: none;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 3px #807c7c;
+}
+#navbar ul li a {
+  color: #eee;
+  padding: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1670px) {
+  #navbar {
+    width: 100%;
+  }
+  #navbar ul {
+    min-width: 600px;
+    margin: auto;
+    display: flex;
+    padding-right: 5rem;
+  }
+  #navbar ul li {
+    margin: auto;
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
